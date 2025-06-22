@@ -5,10 +5,11 @@ import { useEffect } from "react";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import Banner from "../components/Banner/Banner";
+import Footer from "../components/Footer/Footer";
 
 const MainLayout = () => {
   const location = useLocation();
-  console.log(location);
+  
   useEffect(() => {
     Aos.init({
       duration: 800, // Animation duration (ms)
@@ -27,7 +28,9 @@ const MainLayout = () => {
       <main className="w-11/12 mx-auto border">
         <Outlet></Outlet>
       </main>
-      <footer></footer>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   );
 };

@@ -7,7 +7,7 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <div className="relative bg-gray-100 w-11/12 mx-auto">
+    <div className="relative w-11/12 mx-auto">
       <div className="bg-white  p-4 flex justify-between items-center rounded-bl-4xl rounded-br-4xl">
         <h2 className="text-xl font-bold cursor-pointer">
           <a href="/">Agency</a>
@@ -60,7 +60,33 @@ const Header = () => {
               >
                 <p className="opacity-30 mb-4 sm:mb-12">Social Media</p>
                 <nav className="flex flex-col gap-2 sm:gap-6 opacity-70">
-                  <NavLinks />
+                  <ul className="space-y-2">
+                    <li>
+                      <a href="#" className="hover:text-blue-600 transition">
+                        LinkedIn
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-blue-600 transition">
+                        Facebook
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-blue-600 transition">
+                        Twitter
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-blue-600 transition">
+                        YouTube
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="hover:text-blue-600 transition">
+                        Instagram
+                      </a>
+                    </li>
+                  </ul>
                 </nav>
               </div>
               <div className="" data-aos="fade-left" data-aos-delay="300">
@@ -72,9 +98,9 @@ const Header = () => {
             </div>
 
             <div
-              className="fixed  sm:bottom-24"
+              className="fixed  sm:bottom-24 left-[10%]"
               data-aos="fade-up"
-            //   data-aos-delay="200"
+              //   data-aos-delay="200"
             >
               <p className="opacity-30 mb-4 mt-12 sm:mt-0">Get In Touch</p>
               <p className="underline">info@Agency.com</p>
