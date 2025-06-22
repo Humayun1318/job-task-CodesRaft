@@ -1,11 +1,16 @@
-import React from 'react';
+import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
-    return (
-        <div>
-            this is main layout
-        </div>
-    );
+  return (
+    <>
+      this is main layout............
+      <header></header>
+      <main>
+        <Outlet></Outlet>
+      </main>
+      <footer></footer>
+    </>
+  );
 };
 
 export default MainLayout;

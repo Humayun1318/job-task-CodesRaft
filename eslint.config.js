@@ -28,6 +28,22 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      // Enforce consistent indentation
+      'indent': ['error', 2, { SwitchCase: 1 }],
+
+      // Disallow use of console except console.error and console.warn
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
+      // Prefer `const` over `let` when variables are not reassigned
+      'prefer-const': 'error',
+      // Disallow use of `var`
+      'no-var': 'error',
+      // Encourage use of arrow functions
+      'prefer-arrow-callback': ['warn', { allowNamedFunctions: false }],
+      // Suggest destructuring from props/state
+      'prefer-destructuring': ['warn', {
+        object: true,
+        array: false,
+      }],
     },
   },
 ]
