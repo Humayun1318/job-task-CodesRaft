@@ -30,14 +30,23 @@ const MainLayout = () => {
         {location.pathname === "/" ? <Banner></Banner> : ""}
         {location.pathname === "/works" ? (
           <>
-            <h3 className="sm:text-lg md:text-4xl font-bold text-center my-12" >Our Works</h3>
+            <h3 className="sm:text-lg md:text-4xl font-bold text-center my-12">
+              Our Works
+            </h3>
           </>
         ) : (
           ""
         )}
         {location.pathname === "/contact" ? (
           <>
-            <h3 className="sm:text-lg md:text-4xl font-bold text-center my-12" >Get In Touch With Us</h3>
+            <div className="text-center my-12">
+              <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                Let's Build Something Great
+              </h1>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Have a project in mind? Get in touch with our team today.
+              </p>
+            </div>
           </>
         ) : (
           ""
