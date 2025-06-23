@@ -79,6 +79,13 @@ const Testimonials = () => {
                   <p className="text-sm text-gray-600">{testimonial.company}</p>
                 </div>
               </div>
+
+              <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <button className="text-sm text-blue-600 hover:text-blue-800 font-medium flex items-center cursor-pointer">
+                  View case study
+                  <ArrowRightIcon className="w-4 h-4 ml-1" />
+                </button>
+              </div>
             </div>
           ))}
         </div>
@@ -99,7 +106,9 @@ const Testimonials = () => {
             <div className="h-px w-full sm:h-10 sm:w-px bg-gray-200"></div>
 
             <div className="flex items-center">
-              <div className=" sm:text-2xl md:text-4xl font-bold text-blue-600">4.9/5</div>
+              <div className=" sm:text-2xl md:text-4xl font-bold text-blue-600">
+                4.9/5
+              </div>
               <div className="ml-4 text-left">
                 <div className="flex mb-1">{StarRender(5)}</div>
                 <p className="text-sm text-gray-600">Average Rating</p>

@@ -35,6 +35,13 @@ const MainLayout = () => {
         ) : (
           ""
         )}
+        {location.pathname === "/contact" ? (
+          <>
+            <h3 className="sm:text-lg md:text-4xl font-bold text-center my-12" >Get In Touch With Us</h3>
+          </>
+        ) : (
+          ""
+        )}
       </header>
       <main className=" border">
         <Outlet></Outlet>

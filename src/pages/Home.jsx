@@ -4,6 +4,7 @@ import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 import { useState } from "react";
 import WhyWeDifferent from "../components/WhyWeDifferent/WhyWeDifferent";
 import Testimonials from "../components/Testimonials/Testimonials";
+import ProjectDiscussion from "../components/ProjectDiscussion/ProjectDiscussion";
 
 const Home = () => {
   const [servicesCard] = useState(services.slice(0, 4));
@@ -33,7 +34,8 @@ const Home = () => {
         </section>
         <WhyWeDifferent />
 
-        <Testimonials/>
+        <Testimonials />
+        <ProjectDiscussion />
       </section>
     </div>
   );
