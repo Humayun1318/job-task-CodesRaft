@@ -1,5 +1,4 @@
 import {
-  BuildingOfficeIcon,
   UserGroupIcon,
   SparklesIcon,
   HeartIcon,

@@ -1,5 +1,4 @@
-import arrowGif from "./../../assets/icons8-arrow-16.png";
-import bannnerGif from "./../../assets/banner3.png";
+
 
 const Banner = () => {
   return (
@@ -22,7 +21,7 @@ const Banner = () => {
             <span className="flex items-center text-white p-2 gap-3">
               START A PROJECT
               <img
-                src={arrowGif}
+                src={`/icons8-arrow-16.png`}
                 alt="start project"
                 className="rounded-full  bg-white"
               />
@@ -35,7 +34,7 @@ const Banner = () => {
           data-aos-duration="1500"
         >
           <img
-            src={bannnerGif}
+            src={`/banner3.png`}
             alt=""
             className="w-full h-full object-cover mix-blend-multiply"
             style={{ backgroundColor: "transparent" }}

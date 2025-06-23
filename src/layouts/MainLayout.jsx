@@ -1,5 +1,4 @@
 import { Outlet, useLocation } from "react-router-dom";
-import NavLinks from "../components/NavLinks/NavLinks";
 import Header from "../components/Header/Header";
 
 import Aos from "aos";

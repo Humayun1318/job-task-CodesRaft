@@ -1,4 +1,4 @@
-import arrowGif from "./../../assets/arrow.gif";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-12 ">
@@ -96,7 +96,7 @@ const Footer = () => {
                   className="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow w-full"
                 />
                 <img
-                  src={arrowGif}
+                  src={`/arrow.gif`}
                   alt="Email Send"
                   className="rounded-full mix-blend-multiply  -ml-16  cursor-pointer"
                   style={{ backgroundColor: "transparent" }}

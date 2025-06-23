@@ -1,7 +1,6 @@
-import  { useState } from "react";
+import { useState } from "react";
 import NavLinks from "../NavLinks/NavLinks";
-import menuBarGif from "./../../assets/icons8-menu.gif";
-import XGif from "./../../assets/icons8-x.gif";
+
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -20,7 +19,7 @@ const Header = () => {
             <div className="flex gap-2">
               Menu
               <img
-                src={menu ? XGif : menuBarGif}
+                src={menu ? '/icons8-x.gif' : '/icons8-menu.gif'}
                 alt={menu ? "Close Menu" : "Open Menu"}
                 className="w-5"
               />
@@ -31,10 +30,7 @@ const Header = () => {
 
       {/* NavLiks */}
       {menu && (
-        <div
-          className="fixed inset-0 z-50 flex "
-          data-aos="fade-left"
-        >
+        <div className="fixed inset-0 z-50 flex " data-aos="fade-left">
           {/* Black backdrop */}
           <div
             className="w-1/2 bg-black/50"
@@ -49,7 +45,7 @@ const Header = () => {
               className="fixed right-4 top-4 cursor-pointer"
               onClick={() => setMenu(false)}
             >
-              <img src={XGif} alt="Menu Close" className="w-5" />
+              <img src={`/icons8-x.gif`} alt="Menu Close" className="w-5" />
             </button>
 
             <div className="sm:flex gap-[30%]  pl-[10%] pt-[20%]">

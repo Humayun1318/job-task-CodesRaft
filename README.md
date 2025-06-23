@@ -1,12 +1,90 @@
-# React + Vite
+# Agency Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Agency Screenshot](./screenshot.png) 
 
-Currently, two official plugins are available:
+A modern, responsive portfolio website for creative agencies built with React 19 and Tailwind CSS v4. Features beautiful animations, intuitive navigation, and a clean design system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **5 Distinct Pages**:
+  - 🏠 Home - Showcase your services and value proposition
+  - 🎨 Our Works - Beautiful project gallery
+  - 👥 About Us - Team and company story
+  - 📚 Tutorials - Filterable resource library
+  - ✉️ Contact - Interactive form with validation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Technical Highlights**:
+  - ⚡ React 19 with modern hooks
+  - 🎨 Tailwind CSS v4 for utility-first styling
+  - ✨ AOS (Animate On Scroll) for smooth animations
+  - 🖱️ Interactive animated menu drawer
+  - 🏷️ Dynamic page titles with React Helmet
+  - 🎛️ Advanced filtering system in Tutorials
+  - 📱 Fully responsive design
+
+## 🛠️ Technologies Used
+
+- **Frontend**:
+  - React 19
+  - Tailwind CSS v4
+  - Heroicons
+  - AOS (Animate On Scroll)
+  - React Helmet (for dynamic titles)
+  - React Router (for navigation)
+
+- **Fonts**:
+  - Headings & Buttons: Poppins
+  - Body Text: Roboto
+
+## 🖥️ Pages Overview
+
+### Home Page
+- Hero section with animated call-to-action
+- Service highlights with hover effects
+- Client testimonials
+- Stats counter animation
+
+### Our Works
+- Project grid with elegant hover states
+- Category filtering
+- Detailed project modals
+- Responsive image loading
+
+### About Us
+- Company timeline/story
+- Team member profiles
+- Core values display
+- Client logos showcase
+
+### Tutorials
+- **Filter system** by category (Design, Development, etc.)
+- Search functionality
+- Resource cards with metadata
+- Featured content highlight
+
+### Contact
+- Beautiful form with:
+  - Real-time validation
+  - Success/error states
+  - Interactive fields
+- Multiple contact methods
+
+## 🧩 Special Components
+
+### Animated Menu Drawer
+- Smooth open/close transitions
+- Mobile-optimized navigation
+- Social media links integration
+- Dark overlay backdrop
+
+### AOS Implementation
+- Scroll-triggered animations
+- Custom timing and delays
+- Responsive animation controls
+- Performance optimized
+
+## 🛠️ Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Humayun1318/job-task-CodesRaft.git

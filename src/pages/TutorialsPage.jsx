@@ -1,4 +1,4 @@
-import React from "react";
+
 import Tutorials from "../components/Tutorials/Tutorials";
 import { Helmet } from "react-helmet";
 

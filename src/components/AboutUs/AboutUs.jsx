@@ -1,7 +1,6 @@
 import {
   ArrowRightIcon,
   BuildingOfficeIcon,
-  UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import { teamMembers, values } from "../../data/teamMembers/teamMembers";
 import { Link } from "react-router-dom";

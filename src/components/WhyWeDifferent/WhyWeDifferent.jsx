@@ -1,5 +1,4 @@
 import { features } from "./../../data/features/features";
-import teamImage from "./../../assets/teamImg.jpg";
 
 const WhyWeDifferent = () => {
   return (
@@ -48,11 +47,11 @@ const WhyWeDifferent = () => {
           <div className="lg:w-1/2" data-aos="fade-down" data-aos-delay="200">
             <div className="relative rounded-xl overflow-hidden shadow-xl">
               <img
-                src={teamImage}
+                src={`/teamImg.jpg`}
                 alt="Our team working together"
                 className="w-full h-auto object-cover"
               />
-              
+
               <div className="absolute bottom-6 left-6 text-white">
                 <p className="text-sm font-medium">
                   Trusted by 200+ clients worldwide
