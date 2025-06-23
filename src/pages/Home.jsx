@@ -5,12 +5,16 @@ import { useState } from "react";
 import WhyWeDifferent from "../components/WhyWeDifferent/WhyWeDifferent";
 import Testimonials from "../components/Testimonials/Testimonials";
 import ProjectDiscussion from "../components/ProjectDiscussion/ProjectDiscussion";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const [servicesCard] = useState(services.slice(0, 4));
 
   return (
     <div className="">
+      <Helmet>
+        <title>My Agency</title>
+      </Helmet>
       {/* works section home */}
       <section>
         <WhatWeDo services={servicesCard} />
