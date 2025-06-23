@@ -1,10 +1,10 @@
-import React from "react";
+import { services } from "./../data/services/service";
 import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 
 const Works = () => {
   return (
     <div>
-      <WhatWeDo></WhatWeDo>
+      <WhatWeDo services={services}/>
     </div>
   );
 };

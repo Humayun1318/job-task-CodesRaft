@@ -15,17 +15,28 @@ const MainLayout = () => {
       duration: 600,
       easing: "ease-in-out",
       once: false,
-      mirror: true, 
+      mirror: true,
     });
   }, []);
 
   return (
     <>
-      <header className="max-w-[1600px]  mx-auto bg-[#F8F9FF] mb-12 ">
+      <header
+        className={`max-w-[1600px]  mx-auto bg-[#F8F9FF] mb-12 ${
+          location.pathname !== "/" ? "pb-12" : ""
+        }`}
+      >
         <Header />
         {location.pathname === "/" ? <Banner></Banner> : ""}
+        {location.pathname === "/works" ? (
+          <>
+            <h3 className="sm:text-lg md:text-4xl font-bold text-center my-12" >Our Works</h3>
+          </>
+        ) : (
+          ""
+        )}
       </header>
-      <main className="w-11/12 mx-auto border">
+      <main className=" border">
         <Outlet></Outlet>
       </main>
       <footer>

@@ -15,7 +15,7 @@ const Header = () => {
         <div className="hidden md:flex gap-4">
           <NavLinks />
         </div>
-        <button onClick={() => setMenu(!menu)} className="cursor-pointer">
+        <button onClick={() => setMenu(!menu)} className="cursor-pointer z-40">
           <span className="fixed top-4 right-8 sm:right-16">
             <div className="flex gap-2">
               Menu

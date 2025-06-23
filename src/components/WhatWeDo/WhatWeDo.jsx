@@ -1,19 +1,9 @@
+/* eslint-disable indent */
 import { Link, useLocation } from "react-router-dom";
-import { services } from "./../../data/services/service";
-import { useEffect, useState } from "react";
 
-const WhatWeDo = () => {
-  const [servicesCard, setServicesCard] = useState(services);
+const WhatWeDo = ({ services }) => {
   const bgColors = ["bg-blue-50", "bg-green-50", "bg-purple-50", "bg-amber-50"];
-
   const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/") {
-      const res = servicesCard.slice(0, 4);
-      setServicesCard(res);
-    }
-  }, [location, servicesCard]);
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
@@ -29,22 +19,31 @@ const WhatWeDo = () => {
               drive business growth.
             </p>
           </div>
-          <Link
-            href="/services"
-            className="flex items-center text-blue-600 hover:text-blue-800 transition-colors font-medium"
-          >
-            See All →
-          </Link>
+          {location.pathname === "/" ? (
+            <Link
+              to="/works"
+              className="flex items-center text-blue-600 hover:text-blue-800 transition-colors font-medium"
+            >
+              See All →
+            </Link>
+          ) : (
+            ""
+          )}
         </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          {servicesCard.map((service, index) => (
+          {services.map((service, index) => (
             <div
               key={index}
-              className={` p-6 rounded-xl hover:bg-gray-50 transition-all border border-transparent
-                hover:border-gray-200  
-                ${location.pathname === "/" ? `${bgColors[index]} group text-center` : ""}`}
+              className={`
+                group p-6 rounded-xl hover:bg-gray-50 transition-all border border-transparent hover:border-gray-200
+                flex flex-col justify-between
+                ${
+                  location.pathname === "/"
+                    ? `${bgColors[index]} text-center`
+                    : ""
+                }`}
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
@@ -54,7 +53,7 @@ const WhatWeDo = () => {
                 className="mix-blend-multiply"
                 style={{ backgroundColor: "transparent" }}
               />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="sm:text-xl font-semibold text-gray-900 mb-2">
                 {service.title}
               </h3>
               {location.pathname === "/works" ? (
@@ -69,12 +68,6 @@ const WhatWeDo = () => {
               ) : (
                 ""
               )}
-              {/* <p className="text-gray-600">{service.description}</p>
-              <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <a href="#" className="text-blue-600 text-sm font-medium">
-                  Learn more →
-                </a>
-              </div> */}
             </div>
           ))}
         </div>
