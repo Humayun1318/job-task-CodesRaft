@@ -1,9 +1,10 @@
 import React from "react";
+import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 
 const Works = () => {
   return (
     <div>
-      <h1>This is our work page.</h1>
+      <WhatWeDo></WhatWeDo>
     </div>
   );
 };

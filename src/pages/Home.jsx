@@ -1,14 +1,15 @@
 import Banner from "../components/Banner/Banner";
+import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 
 const Home = () => {
   return (
     <div className="">
-      {/* <Banner></Banner> */}
-      <h1>This is home page</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
-        vero?
-      </p>
+
+      {/* works section home */}
+      <section>
+        <WhatWeDo/>
+      </section>
+      
     </div>
   );
 };
