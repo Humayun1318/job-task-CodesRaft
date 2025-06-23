@@ -1,6 +1,6 @@
 # Agency Portfolio Website
 
-![Agency Screenshot](./screenshot.png) 
+**Project Link**: [https://agency-portfolio-iota.vercel.app/](https://agency-portfolio-iota.vercel.app/)
 
 A modern, responsive portfolio website for creative agencies built with React 19 and Tailwind CSS v4. Features beautiful animations, intuitive navigation, and a clean design system.
 
@@ -88,3 +88,24 @@ A modern, responsive portfolio website for creative agencies built with React 19
 1. Clone the repository:
 ```bash
 git clone https://github.com/Humayun1318/job-task-CodesRaft.git
+
+```
+2. Install dependencies
+```bash
+npm install
+
+```
+2. Run the development server
+```bash
+npm run dev
+
+```
+
+## ✉️ Contact
+
+**Humayun Kabir** - humayunkabir6267@gmail.com  
+**Portfolio**: [humayun.dev](https://humayun-vert.vercel.app/)  
+**LinkedIn**: [https://www.linkedin.com/in/humayunkabir13](https://www.linkedin.com/in/humayunkabir13/)  
+**GitHub**: [https://github.com/Humayun1318](https://github.com/Humayun1318)  
+
+**Project Link**: [https://agency-portfolio-iota.vercel.app/](https://agency-portfolio-iota.vercel.app/)

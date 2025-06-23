@@ -18,6 +18,10 @@ const MainLayout = () => {
     });
   }, []);
 
+  useEffect(() => {
+    Aos.refresh();
+  }, [location]);
+
   return (
     <>
       <header
@@ -81,7 +85,7 @@ const MainLayout = () => {
           ""
         )}
       </header>
-      <main className=" border">
+      <main className="">
         <Outlet></Outlet>
       </main>
       <footer className="mt-12" id="footer">
