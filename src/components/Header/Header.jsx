@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import NavLinks from "../NavLinks/NavLinks";
 import menuBarGif from "./../../assets/icons8-menu.gif";
 import XGif from "./../../assets/icons8-x.gif";
@@ -33,7 +33,7 @@ const Header = () => {
       {menu && (
         <div
           className="fixed inset-0 z-50 flex "
-          data-aos={menu ? "fade-left" : "fade-right"}
+          data-aos="fade-left"
         >
           {/* Black backdrop */}
           <div
