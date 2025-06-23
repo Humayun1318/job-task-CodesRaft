@@ -66,11 +66,26 @@ const MainLayout = () => {
         ) : (
           ""
         )}
+        {location.pathname === "/about" ? (
+          <>
+            <div className="text-center my-12">
+              <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                Crafting Digital Excellence
+              </h1>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                We're a passionate team of designers and developers creating
+                meaningful digital experiences since 2012.
+              </p>
+            </div>
+          </>
+        ) : (
+          ""
+        )}
       </header>
       <main className=" border">
         <Outlet></Outlet>
       </main>
-      <footer className="mt-12">
+      <footer className="mt-12" id="footer">
         <Footer></Footer>
       </footer>
     </>
