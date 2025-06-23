@@ -3,6 +3,7 @@ import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 
 import { useState } from "react";
 import WhyWeDifferent from "../components/WhyWeDifferent/WhyWeDifferent";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 const Home = () => {
   const [servicesCard] = useState(services.slice(0, 4));
@@ -31,6 +32,8 @@ const Home = () => {
           </div>
         </section>
         <WhyWeDifferent />
+
+        <Testimonials/>
       </section>
     </div>
   );

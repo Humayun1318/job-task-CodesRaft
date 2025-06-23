@@ -45,7 +45,7 @@ const WhyWeDifferent = () => {
           </div>
 
           {/* Right side */}
-          <div className="lg:w-1/2" data-aos="fade-left" data-aos-delay="200">
+          <div className="lg:w-1/2" data-aos="fade-down" data-aos-delay="200">
             <div className="relative rounded-xl overflow-hidden shadow-xl">
               <img
                 src={teamImage}

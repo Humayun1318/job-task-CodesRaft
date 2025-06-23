@@ -1,0 +1,38 @@
+export const testimonials = [
+  {
+    id: 1,
+    name: "Sarah Johnson",
+    company: "Tech Innovations Inc.",
+    text: "The team transformed our digital presence completely. Our engagement metrics have doubled since launching the new platform.",
+    rating: 5,
+    color: "bg-blue-50",
+    delay: "100",
+  },
+  {
+    id: 2,
+    name: "Michael Chen",
+    company: "Global Solutions Ltd.",
+    text: "Their innovative approach to UX design solved problems we didn't even know we had. The results speak for themselves.",
+    rating: 5,
+    color: "bg-purple-50",
+    delay: "200",
+  },
+  {
+    id: 3,
+    name: "Elena Rodriguez",
+    company: "Creative Minds Agency",
+    text: "Working with this agency was a game-changer. Their technical expertise and creative vision delivered beyond our expectations.",
+    rating: 4,
+    color: "bg-green-50",
+    delay: "300",
+  },
+  {
+    id: 4,
+    name: "David Thompson",
+    company: "Enterprise Partners",
+    text: "The seamless integration of branding and functionality in our new platform has impressed both our team and clients.",
+    rating: 5,
+    color: "bg-amber-50",
+    delay: "400",
+  },
+];
