@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout";
 import NotFound from "../pages/NotFound";
 import Home from "../pages/Home";
 import About from "../pages/About";
-import Tutorials from "../pages/Tutorials";
+import TutorialsPage from "../pages/TutorialsPage";
 import Works from "../pages/Works";
 import ContactPage from "../pages/ContactPage";
 
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: "tutorials",
-        element: <Tutorials />,
+        element: <TutorialsPage />,
       },
       {
         path: "works",

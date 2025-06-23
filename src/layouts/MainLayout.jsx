@@ -51,6 +51,21 @@ const MainLayout = () => {
         ) : (
           ""
         )}
+        {location.pathname === "/tutorials" ? (
+          <>
+            <div className="text-center my-12">
+              <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+                Development and Design Resources
+              </h1>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Elevate your skills with our curated collection of tutorials and
+                learning materials
+              </p>
+            </div>
+          </>
+        ) : (
+          ""
+        )}
       </header>
       <main className=" border">
         <Outlet></Outlet>
